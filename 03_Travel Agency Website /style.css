@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef5ff;
+  margin: 0;
+}
+header {
+  background: #075985;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 15px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #ccc;
+}
+h2 { color: #075985; }
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 7px 0;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+button {
+  background: #0284c7;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button:hover { background: #075985; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+th { background: #bae6fd; }
+.seats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.seats label {
+  background: #dcfce7;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+.seats input { width: auto; }
+@media(max-width:600px) {
+  .container { margin: 10px; }
+  th, td { padding: 6px; font-size: 13px; }
+}
