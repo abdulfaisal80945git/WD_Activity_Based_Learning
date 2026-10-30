@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking</title>
+<link rel="stylesheet" href="style3.css"
+</head>
+<body>
+
+<header>
+  <h1>✈ Travel Booking</h1>
+  <p>Book your journey with ease!</p>
+</header>
+
+<div class="container">
+<form onsubmit="alert('Booking request submitted!'); return false;">
+
+<div class="card">
+<h2>Journey Details</h2>
+<label>Source</label>
+<input type="text" placeholder="Enter source city" required>
+
+<label>Destination</label>
+<input type="text" placeholder="Enter destination city" required>
+
+<label>Travel Date</label>
+<input type="date" required>
+
+<label>Return Date</label>
+<input type="date">
+
+<label>Travel Type</label>
+<select>
+<option>Bus</option>
+<option>Train</option>
+<option>Flight</option>
+</select>
+</div>
+
+<div class="card">
+<h2>Passenger Details</h2>
+<input type="text" placeholder="Passenger Name" required>
+<input type="number" placeholder="Passenger Age" min="1" required>
+<select required>
+<option value="">Select Gender</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+<input type="email" placeholder="Email Address" required>
+</div>
+
+<div class="card">
+<h2>Available Services</h2>
+<label><input type="checkbox" style="width:auto"> Air Conditioning</label><br>
+<label><input type="checkbox" style="width:auto"> Meals</label><br>
+<label><input type="checkbox" style="width:auto"> Wi-Fi</label><br>
+<label><input type="checkbox" style="width:auto"> Extra Baggage</label>
+</div>
+
+<div class="card">
+<h2>Select Your Seat</h2>
+<p>Choose one seat:</p>
+<div class="seats">
+<label><input type="radio" name="seat" value="A1" required> A1</label>
+<label><input type="radio" name="seat" value="A2"> A2</label>
+<label><input type="radio" name="seat" value="B1"> B1</label>
+<label><input type="radio" name="seat" value="B2"> B2</label>
+</div>
+<p>Green seats indicate available seats in this demo.</p>
+</div>
+
+<div class="card">
+<h2>Fare Information</h2>
+<table>
+<tr><th>Travel Type</th><th>Fare</th></tr>
+<tr><td>Bus</td><td>₹500</td></tr>
+<tr><td>Train</td><td>₹800</td></tr>
+<tr><td>Flight</td><td>₹2500</td></tr>
+</table>
+<p>Fares are sample prices per passenger.</p>
+<button type="submit">Book Now</button>
+<button type="reset">Reset Form</button>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
