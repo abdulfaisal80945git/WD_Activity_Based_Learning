@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f2;
+}
+
+header {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    height: 100%;
+}
+
+.overlay h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #164b35;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 12px;
+    color: #164b35;
+}
+
+.panel {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-left: 5px solid #164b35;
+    text-align: left;
+    line-height: 2;
+    box-shadow: 0 3px 8px lightgray;
+}
+
+.panel ul {
+    padding-left: 25px;
+}
+
+.safety {
+    border-left-color: orange;
+}
+
+.price-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.price-card h2 {
+    color: orange;
+    margin: 15px;
+}
+
+footer {
+    background-color: #164b35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .overlay {
+        padding-top: 100px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .price-card {
+        width: 90%;
+    }
+}
